@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vowel count</title>
+</head>
+<body>
+   
+    
+    <script>
+        let vowelArray = ["a","e","i","o","u","A","E","I","O","U"];
+        const text = "I fell in love Javascript Programming Language.";
+        let textSentence = [];
+
+        textSentence = Array.from(text);
+        document.write(textSentence+"<br>");
+        let vowel = 0;
+        for(let i=0; i<textSentence.length;i++){
+            if (vowelArray.includes(textSentence[i])) {
+            document.write(textSentence[i]+"  ");
+            vowel++;
+            }
+        }
+        document.write("<br>");
+        document.write("Number of vowel is "+vowel);
+    </script>
+</body>
+</html>
